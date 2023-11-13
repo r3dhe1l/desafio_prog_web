@@ -1,0 +1,45 @@
+
+.header_logo {
+    display: flex;
+    background-color: rgb(55, 107, 55);
+    justify-content: left;
+    align-items: center;
+}
+
+.container-fluid { 
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(112, 168, 101);    
+}
+
+.container-fluid a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.container-fluid a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.cards {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    align-items:  center;
+    
+}
+.cards .card {
+    border: 1px solid black;
+}
+
+
+
