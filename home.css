@@ -34,7 +34,7 @@ h1.navbar-brand {
 
 .container-fluid a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .container-fluid a:hover {
