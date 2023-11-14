@@ -55,11 +55,6 @@ h1.navbar-brand {
     border: 1px solid black;
 }
 
-.cell-content{
-    align-items: center;
-    justify-content: center;
-}
-
 .cell-content img {
     float: left;
     margin-right: 10px;
@@ -69,4 +64,19 @@ h1.navbar-brand {
 
 .cell-content p {
     overflow: auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.cell-padding {
+    margin: 10px 10px;
+    /* Adiciona 20px de espaço acima e abaixo de cada célula */
+}
+
+.foto-final {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width: 60%;
 }
