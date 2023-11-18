@@ -11,15 +11,19 @@
 }
 
 .cell-content img {
-    margin-right: 10px;
-    height: 60%;
-    width: 60%;
+    width: 100%;
 }
 
 .cell-content p {
     overflow: auto;
     text-align: justify;
     font-size: 18px;
+}
+
+.cell-content {
+    width: 50%;
+    padding: 0;
+    align-items: flex-start;
 }
 
 .cell-padding {
@@ -37,21 +41,11 @@
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
     width: 800px;
-    height: 550px;
     margin: auto;
 }
 
-.article-img {
-    flex: 1;
-    margin-right: 20px;
-}
+.carrossel {
+    width: fit-content !important;
+    margin: 0 auto;
 
-.article-text {
-    flex: 2;
-}
-
-.receita{
-    margin-top: 12px;
-    background-color:rgb(112, 168, 101);
-    border-radius: 50px;
 }

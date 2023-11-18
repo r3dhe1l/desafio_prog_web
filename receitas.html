@@ -5,7 +5,7 @@
   <title>BEM VIVER</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="receitas.css">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -32,15 +32,13 @@
 
   <main>
 
-    <section class="container">
+    <h1 class="title">Receitas</h1> 
 
-      <div class="receita" id="suco">
-        <article style="padding: 0 20px; display: flex;">
-          <img src="img/img10.jpeg" class="img-fluid article-img" alt="Responsive image"
-            style="margin-top: 12px; width: 40%; margin-left: 12px; margin-bottom: 12px; border-radius: 15px;">
-          <div>
-            <h2
-              style="font-size: 40px; color: white; text-align: center; text-shadow: 1px 1px 1px rgba(29, 83, 7, 0.7);">
+    <section class="container">
+        <article class="artigo-receita">
+          <img src="img/img10.jpeg" class="article-img" alt="Responsive image">
+          <div class="text-receita">
+            <h2>
               Suco verde com ora-pro-nóbis
             </h2>
             <p>
@@ -64,15 +62,10 @@
             </p>
           </div>
         </article>
-      </div>
-
-      <div class="receita" id="vitamina">
-        <article style="padding: 0 20px; display: flex;">
-          <img src="img/img11.jpeg" class="img-fluid article-img" alt="Responsive image"
-            style="margin-top: 12px; width: 49%; margin-left: 12px; margin-bottom: 12px; border-radius: 15px;">
-          <div>
-            <h2
-              style="font-size: 40px; color: white; text-align: center; text-shadow: 1px 1px 1px rgba(29, 83, 7, 0.7);">
+        <article class="artigo-receita">
+          <img src="img/img11.jpeg" class="article-img" alt="Responsive image">
+          <div class="text-receita">
+            <h2>
               Vitamina de abacate fácil
             </h2>
             <p>
@@ -99,15 +92,10 @@
             </p>
           </div>
         </article>
-      </div>
-
-      <div class="receita" id="panqueca">
-        <article style="padding: 0 20px; display: flex;">
-          <img src="img/img12.jpeg" class="img-fluid article-img" alt="Responsive image"
-            style="margin-top: 12px; width: 50%; margin-left: 12px; margin-bottom: 12px; border-radius: 15px;">
-          <div>
-            <h2
-              style="font-size: 40px; color: white; text-align: center; text-shadow: 1px 1px 1px rgba(29, 83, 7, 0.7);">
+        <article class="artigo-receita">
+          <img src="img/img12.jpeg" class="article-img" alt="Responsive image">
+          <div class="text-receita">
+            <h2>
               Panqueca integral de banana
             </h2>
             <p>Rende até 4 panquecas<br>
@@ -133,66 +121,39 @@
             </p>
           </div>
         </article>
-      </div>
-
-      <div class="receita" id="antepasto">
-        <article style="padding: 0 20px; display: flex;">
-          <img src="img/img13.jpeg" class="img-fluid article-img" alt="Responsive image"
-            style="margin-top: 120px; width: 50%; margin-left: 12px; margin-bottom: 120px; border-radius: 15px;">
-          <div>
-            <h2
-              style="font-size: 40px; color: white; text-align: center; text-shadow: 1px 1px 1px rgba(29, 83, 7, 0.7);">
-              Antepasto de berinjela de panela
-            </h2>
+        <article class="artigo-receita">
+          <img src="img/img13.jpeg" class="article-img" alt="Responsive image">
+          <div class="text-receita">
+            <h2>Antepasto de berinjela de panela</h2>
             <p>Rende até 10 porções<br>
-              Cerca de 40 minutos de preparo<br>
-              <br>
-              ingredientes:<br>
-              1 cebola picada<br>
-              3 dentes de alho picados<br>
-              1 pimentão vermelho picado em cubos<br>
-              1 pimentão amarelo picado em cubos<br>
-              3 berinjelas médias (com casca) picadas<br>
-              1/3 xícara de chá de azeitonas picadas<br>
-              1/2 xícara de chá de uvas-passas brancas<br>
-              1 colher de sopa de orégano<br>
-              1 colher de chá de sal<br>
-              Folhas de manjericão e tomilho<br>
-              Pimenta-do-reino a gosto<br>
+              Cerca de 40 minutos de preparo<br><br>
+              <b>Ingredientes:</b><br>
+              1 cebola e 3 dentes de alho picados<br>
+              1 pimentão vermelho e 1 pimentão amarelo em cubos<br>
+              3 berinjelas médias picadas<br>
+              1/3 xícara de azeitonas picadas<br>
+              1/2 xícara de uvas-passas brancas<br>
+              1 colher de sopa de orégano e 1 colher de chá de sal<br>
+              Manjericão, tomilho e pimenta-do-reino a gosto<br>
               3 colheres de sopa de vinagre branco<br>
-              1/2 xícara de chá de azeite de oliva<br>
-              <br>
-              Modo de preparo:<br>
-              1-Reúna todos os ingredientes do seu antepasto de berinjela de panela;<br>
-              2-Coloque as berinjelas em uma tigela com água para que não escureçam. Deixe até a hora
-              que for
-              acrescentar na panela;<br>
-              3-Leve uma panela ao fogo médio, aqueça o azeite e refogue a cebola e o alho;<br>
-              4-Acrescente os pimentões e refogue até ficarem macios;<br>
-              5-Escorra as berinjelas e adicione à panela. Refogue, sem parar de mexer, até que fiquem
-              macias.
-              Se
-              necessário, acrescente um pouco de água para não grudar no fundo da panela;<br>
-              6-Adicione as azeitonas, as uvas-passas, o orégano, o sal, o manjericão, o tomilho e a
-              pimenta-do-reino.
-              Em seguida, coloque o vinagre e o azeite de oliva. Misture e deixe cozinhar até atingir o
-              ponto
-              que
-              mais
-              te agradar;<br>
-              7-Sirva como preferir. Bom apetite!
+              1/2 xícara de chá de azeite de oliva<br><br>
+              <b>Modo de preparo:</b><br>
+              1-Reúna os ingredientes;<br>
+              2-Coloque as berinjelas em água;<br>
+              3-Aqueça azeite, refogue cebola e alho;<br>
+              4-Adicione pimentões e refogue;<br>
+              5-Escorra e adicione berinjelas, mexa até amaciar;<br>
+              6-Adicione azeitonas, uvas-passas, orégano, sal, ervas e pimenta;<br>
+              7-Coloque vinagre e azeite, cozinhe até atingir o ponto desejado;<br>
+              8-Sirva como preferir. Bom apetite!
             </p>
           </div>
         </article>
-      </div>
 
-      <div class="receita" id="ceviche">
-        <article style="padding: 0 20px; display: flex;">
-          <img src="img/img14.jpeg" class="img-fluid article-img" alt="Responsive image"
-            style="margin-top: 12px; width: 50%; margin-left: 12px; margin-bottom: 12px; border-radius: 15px;">
-          <div>
-            <h2
-              style="font-size: 40px; color: white; text-align: center; text-shadow: 1px 1px 1px rgba(29, 83, 7, 0.7);">
+        <article class="artigo-receita">
+          <img src="img/img14.jpeg" class="article-img" alt="Responsive image">
+          <div class="text-receita">
+            <h2>
               Ceviche de banana-da-terra
             </h2>
             <p>Rende 2 porções<br>
@@ -220,15 +181,11 @@
             </p>
           </div>
         </article>
-      </div>
 
-      <div class="receita" id="pao">
-        <article style="padding: 0 20px; display: flex;">
-          <img src="img/img15.jpeg" class="img-fluid article-img" alt="Responsive image"
-            style="margin-top: 12px; width: 50%; margin-left: 12px; margin-bottom: 12px; border-radius: 15px;">
-          <div>
-            <h2
-              style="font-size: 40px; color: white; text-align: center; text-shadow: 1px 1px 1px rgba(29, 83, 7, 0.7);">
+        <article class="artigo-receita">
+          <img src="img/img15.jpeg" class="article-img" alt="Responsive image">
+          <div class="text-receita">
+            <h2>
               Pão de queijo fit fácil
             </h2>
             <p>Rende até 12 unidades<br>
@@ -261,7 +218,6 @@
             </p>
           </div>
         </article>
-      </div>
 
     </section>
 

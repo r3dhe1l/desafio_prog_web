@@ -1,4 +1,6 @@
-function enviar() {
+function enviar(event) {
+    event.preventDefault()
+
     const modal = document.getElementById('modal-backdrop');
 
     const peso = parseFloat(document.getElementsByName('peso')[0].value);
