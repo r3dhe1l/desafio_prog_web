@@ -5,11 +5,12 @@
     <title>BEM VIVER</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="dicas.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="dicas.js"></script>
 </head>
 
 <body>
@@ -29,12 +30,109 @@
         <a href="dicas.html">Dicas de Saúde</a>
         <a href="quiz.html">Quiz</a>
     </nav>
-
     <main>
-    <!-- escrevam seus códigos aquis -->
+        <div class="container">
+            <h1 class="title">Dicas de Saúde</h1> 
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores do carrossel -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="https://www.conexasaude.com.br/blog/3-dicas-de-saude/" target="_blank">
+                            <img src="img/medico.jpg" alt="Dica 1">
+                            <div class="backDrop">
+                                <h1 class="articleTitle">Dicas de saúde: Conheça 19 hábitos para começar hoje!</h1>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://especialmed.com/blog/dicas-de-saude/" target="_blank">
+                            <img src="img/agua.jpg" alt="Dica 2">
+                            <div class="backDrop">
+                                <h1 class="articleTitle">7 dicas de saúde e beleza que valem ouro!</h1>
+                            </div> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://telemedicinamorsch.com.br/blog/dicas-de-saude" target="_blank">
+                            <img src="img/comida.jpg" alt="Dica 3">
+                            <div class="backDrop">
+                                <h1 class="articleTitle">27 DICAS DE SAÚDE PARA VIVER MELHOR A PARTIR DE HOJE</h1>
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Controles do carrossel -->
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        
+            <section id="filter">
+                <select id="filterOptions">
+                    <option value="" selected disabled hidden>Escolha uma opção</option>    
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="exercicio">Exercício Físico</option>
+                    <option value="doencas">Doenças</option>
+                </select>
+                <button onclick="filterTips()">Filtrar</button>
+            </section>
+        
+            <section id="healthTips">
+                <div id="textoPrincipal" class="tip">
+                    <h1>Dicas Gerais de Saúde para uma Vida Equilibrada</h1>
+
+                    <p>Viver uma vida saudável é um compromisso contínuo com o seu bem-estar. Adotar práticas saudáveis pode melhorar
+                        significativamente a qualidade de vida. Aqui estão algumas dicas gerais para promover uma saúde ótima:</p>
+
+                    <h2>1. Consultas Médicas Regulares:</h2>
+                    <p>Agende check-ups anuais para monitorar sua saúde geral. Consultar regularmente um profissional de saúde pode
+                        ajudar na prevenção e detecção precoce de problemas de saúde.</p>
+
+                    <h2>2. Conhecendo seu Histórico Genético:</h2>
+                    <p>Compreender seu histórico familiar pode fornecer insights importantes sobre possíveis condições genéticas. Compartilhe
+                        essas informações com seu médico para um cuidado mais personalizado.</p>
+
+                    <h2>3. Proteção Sexual:</h2>
+                    <p>Praticar sexo seguro é vital para prevenir doenças sexualmente transmissíveis (DSTs) e garantir a saúde sexual e
+                        reprodutiva.</p>
+
+                    <h2>4. Alimentação Balanceada:</h2>
+                    <p>Adote uma dieta rica em frutas, vegetais, grãos integrais e proteínas magras. Equilibrar os grupos alimentares
+                        fornece os nutrientes necessários para o funcionamento adequado do corpo.</p>
+
+                    <h2>5. Exercícios Físicos Regularmente:</h2>
+                    <p>A atividade física regular é essencial para a saúde cardiovascular, controle de peso e bem-estar geral. Encontre
+                        uma atividade que você goste e faça dela parte da sua rotina.</p>
+
+                    <h2>6. Hidratação Adequada:</h2>
+                    <p>Beber água suficiente é crucial para manter o corpo hidratado e apoiar funções vitais. Estabeleça metas diárias de
+                        consumo de água.</p>
+
+                    <h2>7. Gerenciamento do Estresse:</h2>
+                    <p>Encontre maneiras eficazes de lidar com o estresse, como meditação, yoga ou atividades relaxantes. O estresse
+                        crônico pode impactar negativamente a saúde mental e física.</p>
+
+                    <p>
+                        Lembre-se, a jornada para uma vida saudável é única para cada pessoa. Consulte sempre profissionais de saúde
+                        para orientações personalizadas.
+                    </p>
+                </div>
+            </section>
+        </div>
     </main>
-
-
     <footer>
         <nav class="navbar navbar-inverse container-fluid">
             <div class="navbar-header">

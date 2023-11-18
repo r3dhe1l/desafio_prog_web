@@ -3,6 +3,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    padding-bottom: 80px; 
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .logo {
     width: 140px;
     margin-right: 15px;
@@ -28,6 +45,8 @@
     background-color: rgb(112, 168, 101) !important;
     border-radius: 0 !important;
     margin-bottom: 0 !important;
+    position: absolute;
+    bottom: 0;
 }
 
 .container-fluid a {
